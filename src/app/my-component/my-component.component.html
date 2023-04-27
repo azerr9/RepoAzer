@@ -1,0 +1,48 @@
+<h1>My Items</h1>
+
+<form>
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" type="text" [(ngModel)]="currentItem.name" name="name">
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="currentItem.description" name="description"></textarea>
+  </div>
+
+  <div>
+    <label for="price">Price:</label>
+    <input id="price" type="number" [(ngModel)]="currentItem.price" name="price">
+  </div>
+
+  <div>
+    <button type="button" (click)="addItem()" [disabled]="!currentItem.name || !currentItem.description || !currentItem.price">Add Item</button>
+    <button type="button" (click)="updateItem()" [disabled]="!currentItem.name || !currentItem.description || !currentItem.price || currentItem.id === 0">Update Item</button>
+    <button type="button" (click)="cancelEdit()">Cancel</button>
+  </div>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.description }}</td>
+      <td>{{ item.price }}</td>
+      <td>
+        <button type="button" (click)="editItem(item)">Edit</button>
+        <button type="button" (click)="deleteItem(item.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

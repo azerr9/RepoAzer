@@ -1,0 +1,107 @@
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  form input,
+  form textarea {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #4D90FE;
+    box-shadow: 0 0 3px rgba(77, 144, 254, 0.5);
+  }
+  
+  form button {
+    background-color: #4D90FE;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 8px;
+    padding: 8px 16px;
+  }
+  
+  form button[disabled] {
+    background-color: #ddd;
+    color: #999;
+    cursor: default;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-top: 16px;
+    width: 100%;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table th:first-child,
+  table td:first-child {
+    border-left: none;
+  }
+  
+  table th:last-child,
+  table td:last-child {
+    border-right: none;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table button {
+    background-color: #d9534f;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 8px;
+    padding: 8px 16px;
+  }
+  
+  table button:first-child {
+    background-color: #4D90FE;
+  }
+  
+  table button:hover {
+    background-color: #c9302c;
+  }
+  

@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "pfe azer",
+      "description": "aaa",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "name": "pfe ines",
+      "description": "ttt",
+      "price": 2
+    }
+  ]
+}
